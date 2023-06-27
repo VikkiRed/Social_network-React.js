@@ -1,0 +1,36 @@
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bgColor);
+}
+.profile-background {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-image: url('./../../img/profile-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #7E8C8A;
+    border-radius: 10px;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid #7E8C8A;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top:-15%;
+}
+
+.avatar-icon {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

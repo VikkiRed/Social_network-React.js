@@ -1,0 +1,16 @@
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--second-bgColor);
+    width: 100%;
+    padding: 0 3%;
+}
+
+.logo-container {
+   
+}
+
+.logo-icon {
+  
+    border-radius: 50%;
+}

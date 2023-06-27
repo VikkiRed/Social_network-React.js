@@ -1,0 +1,11 @@
+:root {
+    --textColor: #3333;
+    --second-textColor: #D9D5D4;
+    --bgColor: #D9D5D4;
+    --second-bgColor: #00a1af;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--textColor);
+}

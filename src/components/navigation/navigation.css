@@ -1,0 +1,9 @@
+.nav-wrapper {
+    display: flex;
+    color: var(--second-textColor);
+    background: var(--second-bgColor);
+}
+.nav-link a:hover,
+.nav-link a:visited {
+    color: var(--second-textColor);
+}
