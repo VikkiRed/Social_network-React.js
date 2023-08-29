@@ -1,0 +1,40 @@
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    top:-10%;
+}
+.avatarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #7E8C8A;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.avatarIcon {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileDescription h1 {
+    font-size: 30px;
+    color: var(--second-bgColor);
+}
+
+.profileDescription p {
+    color: #333
+}

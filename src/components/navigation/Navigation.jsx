@@ -1,29 +1,34 @@
 import './navigation.css';
 
-
-import 'boxicons';
-
+import { NavLink } from 'react-router-dom';
+import Friends from './../friends/Friends';
 
 
 const Navigation = () => {
+
+    const activeLink = 'nav-list__link nav-list__link--active';
+    const normalLink = 'nav-list__link';
+
     return (
-        <div className="nav-wrapper">
-            <nav>
-                <ul>
-                    <li className='nav-link'><a href='#!'>Profile</a></li>
-                    <li className='nav-link'><a href='#!'>Messages</a></li>
-                    <li className='nav-link'><a href='#!'>News</a></li>
-                    <li className='nav-link'><a href='#!'>Music</a></li>
-                 </ul>
-                 <box-icon name="message"></box-icon>
-                 <box-icon name="news"></box-icon>
-                 <box-icon name="music"></box-icon>
-                 <box-icon name="user"></box-icon>
+            <nav className='nav'>
+               
+                <ul className='nav-list'>
+                    <li className='nav-list__item'>
+                        <NavLink to='/Profile' className={({isActive}) => isActive ? activeLink : normalLink}>Profile
+                        </NavLink>
+                    </li>
+                    <li className='nav-list__item'><NavLink to='/Dialogues' className={({isActive}) => isActive ? activeLink : normalLink}>Messages</NavLink></li>
+                    <li className='nav-list__item'><NavLink to='/News' className={({isActive}) => isActive ? activeLink : normalLink}>News</NavLink></li>
+                    <li className='nav-list__item'><NavLink to='/Music' className={({isActive}) => isActive ? activeLink : normalLink}>Music</NavLink></li>
+                    <li className='nav-list__item'><NavLink to='/Settings' className={({isActive}) => isActive ? activeLink : normalLink}>Settings</NavLink></li>
+                    <li className='nav-list__item'><NavLink to='/Users' className={({isActive}) => isActive ? activeLink : normalLink}>Users</NavLink></li>
+                </ul>
+
+                <Friends />
             </nav>
-            
-        </div>
-        
+         
+
     );
 }
- 
+
 export default Navigation;

@@ -1,0 +1,42 @@
+:root {
+    --textColor: #333;
+    --second-textColor: #D9D5D4;
+    --bgColor: #D9D5D4;
+    --second-bgColor: #00a1af;
+
+    --dark-textColor: #333;
+    --dark-second-textColor: #D9D5D4;
+    --dark-bgColor: #D9D5D4;
+    --dark-second-bgColor: #00a1af;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--textColor);
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "n c c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    background: var(--bgColor);
+  }
+  
+  .header-wrapper {
+    grid-area: h;
+  }
+  
+  .navigation-wrapper {
+    grid-area: n;
+  }
+  
+  .content-wrapper {
+    grid-area: c;
+  }
+  
+  

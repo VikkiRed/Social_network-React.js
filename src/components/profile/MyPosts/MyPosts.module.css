@@ -1,0 +1,10 @@
+.postsContainer {
+    width: 100%;
+    border: 1px solid #7E8C8A;
+    border-radius: 5px;
+}
+
+.text {
+    color:red;
+    border: 1px solid black;
+}
